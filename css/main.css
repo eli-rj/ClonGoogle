@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{ 
+    /* Respetara las propiedades de header nav */
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style:none; /* Para eliminar los puntos de lista */
+    justify-content: center;
+    align-items: center;  
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgb(21, 21, 21);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+nav .nav-right-section .menu1{
+    background-image: url(https://lh3.googleusercontent.com/ogw/AAEL6sg7P9hGbgx1sjQ3c69MmMxgnLHfDemXFhtD2cJ-lA=s64-c-mo);
+    width: 35px;
+    height: 35px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background-size: contain
+}
+
+/* Main */
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Sección logo */
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/* Sección input */
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    background-color: transparent;
+    width: 525px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    margin: 0;
+    padding: 0 0 3px;
+    color: rgba(0, 0, 0, .87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    resize: none;
+}
+
+main .main-input input {
+    border: none;
+    color: var(color #000000ff);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: inherit;
+    width: 420px;
+    height: 40px;
+    outline: none;
+    padding-inline-start: 2%;
+    position: relative;
+    cursor: text;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 7px 1px rgba(0, 0, 0, .1);
+}
+
+main .main-input .search-icon{
+    background-image: url("https://seekicon.com/free-icon-download/search_20.svg");
+    /* Evitar que se repita el icono por alguna razon */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-left: 10%;
+    margin-right: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 20px;
+    height: 20px;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+main .main-input .cam-icon{
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
+    width: 20px;
+    height: 20px;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+main .main-buttons{
+    width: 500px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+    height: 36px;
+    /* Fondo de botones */
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /* Color de letras antes de hover */
+    color: #3c4043;
+    /* Redondeamos botones */
+    border-radius: 5px;
+    /* Margen interno */
+    padding: 0 16px;
+    /* Margen entre botones */
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+/* Efecto hover (como el input) */
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    /*background-color: #f8f9fa;
+    /* Cambia borde al hacer hover */
+    border: 1px solid #dadce0;
+    /* Cambia color letras (muy leve) al hacer hover */
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /* Footer dividido en columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0%; /* Nos sirve para acomodar el footer */
+}
+
+footer ul{
+    margin: 10px; /* Afecta todos los lados del margen */
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
